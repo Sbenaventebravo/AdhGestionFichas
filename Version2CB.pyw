@@ -1440,7 +1440,9 @@ class VgestionFichas(QtGui.QDialog):
             if vEditar.clienteEditado is not None:
                 try:
 
-                    modificar = DTO.Cliente(vEditar.ui.leRut.text(), vEditar.ui.leNombre.text())
+                    modificar = DTO.Cliente()
+                    modificar.setNombre(vEditar.ui.leNombre.text())
+                    modificar.setRut(vEditar.ui.leRut.text())
                     DAO.Cliente(modificar).modificarCliente(daoBuscarCliente.getCliente().getIdCliente())
                     MostrarMensaje("Cliente Editado con exito")
 
