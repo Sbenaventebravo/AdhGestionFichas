@@ -1346,13 +1346,13 @@ class VgestionFichas(QtGui.QDialog):
                         raise Exception("La categoria ya existe, intente con otro nombre")
                 elif not newCategoria:
                     raise Exception("El nombre de la categoria no puede estar vacio, intente de nuevo")
+                MostrarMensaje("Categoria agregada con exito")
 
         except Exception as e:
             MostrarError(str(e.message))
         else:
 
             self.CargarTwCategorias()
-            MostrarMensaje("Categoria agregada con exito")
         pass
     def pbEditarCategoria_click(self):
         "modifica la categoria seleccionada"
@@ -1493,11 +1493,12 @@ class VgestionFichas(QtGui.QDialog):
                         raise Exception("El codigo de la maquina ya esta registrado, por favor intente con otro")
                 elif not newMaquina:
                     raise Exception("El codigo de la maquina, no puede estar vacio")
+                MostrarMensaje("Maquina agregada con exito")
         except Exception as e:
             MostrarError(str(e.message))
         else:
             self.CargarTwMaquinas()
-            MostrarMensaje("Maquina agregada con exito")
+
         pass
     def pbEditarMaquina_click(self):
         try:
@@ -1950,6 +1951,7 @@ class VgestionFichas(QtGui.QDialog):
             if (insertarFicha.insertarFichaTecnica()):
                 MostrarMensaje("La ficha a sido agregada exitosamente")
                 vAgregar = agregarCaracteristicas.Vagregarcaracteristicas()
+                vAgregar.setWindowTitle("Agregar Caracteristicas")
                 ficha = DAO.FichaTecnica()
                 ficha.getFichaTecnica().setIdFicha(DAO.FichaTecnica().idUltimaFicha())
                 ficha.leerFichaTecnicaidFicha()
