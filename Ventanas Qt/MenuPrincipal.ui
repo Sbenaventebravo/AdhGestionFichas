@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion De Fichas Tecnica</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#untitled
+{
+background-color: yellow
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="logo">
+      <property name="styleSheet">
+       <string notr="true">#logo
+{
+ border-image: url(:/2.jpg/2.jpg);
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>720</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOperaciones">
+    <property name="title">
+     <string>Operaciones</string>
+    </property>
+    <widget class="QMenu" name="menuAdministrar_Fichas">
+     <property name="title">
+      <string>Administrar Fichas</string>
+     </property>
+     <addaction name="actionCrear_Ficha_Tecnica"/>
+     <addaction name="actionModificar_Ficha_Tecnica"/>
+     <addaction name="actionConsultar_Ficha_tecnica"/>
+    </widget>
+    <addaction name="actionAdministrar_Categorias"/>
+    <addaction name="actionAdministrar_Clientes"/>
+    <addaction name="actionAdministrar_Maquina"/>
+    <addaction name="menuAdministrar_Fichas"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuOperaciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdministrar_Categorias">
+   <property name="text">
+    <string>Administrar Categorias</string>
+   </property>
+  </action>
+  <action name="actionAdministrar_Clientes">
+   <property name="text">
+    <string>Administrar Clientes</string>
+   </property>
+  </action>
+  <action name="actionAdministrar_Maquina">
+   <property name="text">
+    <string>Administrar Maquina</string>
+   </property>
+  </action>
+  <action name="actionCrear_Ficha_Tecnica">
+   <property name="text">
+    <string>Crear Ficha Tecnica</string>
+   </property>
+  </action>
+  <action name="actionModificar_Ficha_Tecnica">
+   <property name="text">
+    <string>Modificar Ficha Tecnica</string>
+   </property>
+  </action>
+  <action name="actionConsultar_Ficha_tecnica">
+   <property name="text">
+    <string>Consultar Ficha tecnica</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="2.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>714</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QTabWidget" name="tabModificarFicha">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabFicha_4">
+      <attribute name="title">
+       <string>Datos Ficha</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_18">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Categoria</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="cmbCategoriaMod_3"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="lblCliente_4">
+            <property name="text">
+             <string>Cliente</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="cmbClienteMod_3"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="lblMaquina_4">
+            <property name="text">
+             <string>Maquina</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QComboBox" name="cmbMaquinaMod_3"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="lblPedido_4">
+            <property name="text">
+             <string>Pedido</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lePedidoMod_3"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="lblEtiqueta_4">
+            <property name="text">
+             <string>Etiqueta</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="leEtiquetaMod_3"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="lblFecha_4">
+            <property name="text">
+             <string>Fecha</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QDateEdit" name="deFechaFichaMod_3">
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="lblVelocidad_5">
+            <property name="text">
+             <string> Velocidad de la Maquina(m/m )</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QDoubleSpinBox" name="dsbVelocidadFichaMod_3">
+            <property name="decimals">
+             <number>2</number>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="lblClisses_4">
+            <property name="text">
+             <string>Clisses</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QRadioButton" name="rbConvencionalesMod_3">
+            <property name="text">
+             <string>Convencionales</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QRadioButton" name="rbDigitalesMod_3">
+            <property name="text">
+             <string>Digitales</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMateriales_4">
+      <attribute name="title">
+       <string>Materiales</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_13">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblCodigoMaterial_4">
+         <property name="text">
+          <string>Codigo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="leCodigoMaterialMod_3"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblNombreMaterial_4">
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="leNombreMaterialMod_3"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lblProveedorMaterial_4">
+         <property name="text">
+          <string>Proveedor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leProveedorMaterialMod_3"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lblAncho_4">
+         <property name="text">
+          <string>Ancho(cm)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="dsbAnchoMaterialMod_3">
+         <property name="decimals">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lblTC_4">
+         <property name="text">
+          <string>¿ TC ?</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="rbTC1Mod_3">
+           <property name="text">
+            <string>Si</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbTC2Mod_3">
+           <property name="text">
+            <string>No</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QTableView" name="viewMateriales_3"/>
+       </item>
+       <item row="5" column="2">
+        <layout class="QVBoxLayout" name="verticalLayout_15">
+         <item>
+          <widget class="QPushButton" name="pbAniadirMaterialMod_3">
+           <property name="text">
+            <string>Añadir Material</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbEditarMaterialMod_3">
+           <property name="text">
+            <string>Editar Material</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbBorrarMaterialMod_3">
+           <property name="text">
+            <string>Borrar Material</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabTintas_4">
+      <attribute name="title">
+       <string>Tintas</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_24">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblColor_5">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="leColorTintaMod_3"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblTipoTinta_4">
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="leTipoTintaMod_3"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lblAniloxTinta_4">
+         <property name="text">
+          <string>Anilox</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="leAniloxTintaMod_3"/>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="lblProveedor_4">
+         <property name="text">
+          <string>Proveedor </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="leProveedorTintaMod_3"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="lblProveedor2_4">
+         <property name="text">
+          <string>Proveedor 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="leProveedorTinta2Mod_3"/>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="lblProveedor3_4">
+         <property name="text">
+          <string>Proveedor  3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="leProveedorTinta3Mod_3"/>
+       </item>
+       <item row="6" column="1" rowspan="3" colspan="2">
+        <widget class="QTableView" name="viewTintas_3"/>
+       </item>
+       <item row="6" column="3">
+        <widget class="QPushButton" name="pbAniadirTintaMod_3">
+         <property name="text">
+          <string>Añadir Tinta</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QPushButton" name="pbEditarTintaMod_3">
+         <property name="text">
+          <string>Editar Tinta</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QPushButton" name="pbBorrarTintaMod_3">
+         <property name="text">
+          <string>Borrar Tinta</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabCaracteristicas_4">
+      <attribute name="title">
+       <string>Caracteristicas Adicionales</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <item>
+        <widget class="QTabWidget" name="tabModCarSec_3">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabMallas_4">
+          <attribute name="title">
+           <string>Mallas</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_45">
+           <item row="0" column="0" colspan="2">
+            <widget class="QFrame" name="formularioMallaMod_3">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_46">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblTipo_5">
+                <property name="text">
+                 <string>Tipo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leTipoMallaMod_3"/>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QRadioButton" name="rbInterno_4">
+                <property name="text">
+                 <string>Interno</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="QRadioButton" name="rbExternoMod_3">
+                <property name="text">
+                 <string>Externo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" rowspan="3" colspan="2">
+               <widget class="QTableView" name="viewMalla_3"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QPushButton" name="pbAniadirMallaMod_3">
+                <property name="text">
+                 <string>Añadir Malla</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pbEditarMallaMod_3">
+                <property name="text">
+                 <string>Editar Malla</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QPushButton" name="pbBorrarMallaMod_3">
+                <property name="text">
+                 <string>Borrar Malla</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabAdhesivoLaminacion_4">
+          <attribute name="title">
+           <string>Adhesivo Laminacion</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_47">
+           <item row="0" column="0" colspan="3">
+            <widget class="QFrame" name="formularioAdhLam_4">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_48">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblProveedorAdhLam_4">
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leProveedorAdhLamMod_3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblAniloxAdhLam_4">
+                <property name="text">
+                 <string>Anilox</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="leAniloxAdhLamMod_3"/>
+              </item>
+              <item row="2" column="0" rowspan="3" colspan="2">
+               <widget class="QTableView" name="viewAdhLam_3"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pbAniadirAdhLamMod_3">
+                <property name="text">
+                 <string>Añadir Adhesivo Laminacion</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QPushButton" name="pbEditarAdhLamMod_3">
+                <property name="text">
+                 <string>Editar Adhesivo Laminacion</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pbBorrarAdhLamMod_3">
+                <property name="text">
+                 <string>Borrar Adhesivo Laminacion</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabAdhesivoColdFoil_4">
+          <attribute name="title">
+           <string>Adhesivo Cold Foil</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="1">
+            <widget class="QFrame" name="formularioAdhCoFo_4">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_15">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblProveedorAdhCoFo_4">
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leProveedorAdhCoFoMod_3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblAnchoAdhCoFo_4">
+                <property name="text">
+                 <string>Anilox</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="leAniloxAdhCoFoMod_3"/>
+              </item>
+              <item row="2" column="0" rowspan="3" colspan="2">
+               <widget class="QTableView" name="viewAdhCofo_3"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pbAniadirAdhCoFoMod_3">
+                <property name="text">
+                 <string>Añadir Adhesivo Cold Foil</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QPushButton" name="pbEditarAdhCoFoMod_3">
+                <property name="text">
+                 <string>Editar Adhesivo Cold Foil</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pbBorrarAdhCoFoMod_3">
+                <property name="text">
+                 <string>Borrar Adhesivo Cold Foil</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabFilmMicronaje_4">
+          <attribute name="title">
+           <string>Film Micronaje</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_49">
+           <item row="0" column="0" colspan="2">
+            <widget class="QFrame" name="formulariFilmMi_4">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_50">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblProveedorFilmMi_4">
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leProveedorFilmMiMod_3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblAnchoFilmMi_4">
+                <property name="text">
+                 <string>Ancho</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDoubleSpinBox" name="dsbAnchoFilmMiMod_3">
+                <property name="decimals">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" rowspan="3" colspan="2">
+               <widget class="QTableView" name="viewFilmmi_3"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pbAniadirFilmMiMod_3">
+                <property name="text">
+                 <string>Añadir Film Micronaje</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QPushButton" name="pbEditarFilmMiMod_3">
+                <property name="text">
+                 <string>Editar Film Micronaje</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pbBorrarFilmMiMod_3">
+                <property name="text">
+                 <string>Borrar Film Micronaje</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabColdFoil_4">
+          <attribute name="title">
+           <string>Cold Foil</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_51">
+           <item row="0" column="0">
+            <widget class="QFrame" name="formularioColdFoil_4">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_16">
+              <item row="0" column="0" colspan="2">
+               <widget class="QRadioButton" name="rbCF_3">
+                <property name="text">
+                 <string>Cold Foil</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QRadioButton" name="rbHS_3">
+                <property name="text">
+                 <string>Hot Stamping</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>320</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblProveedorColdFoil_4">
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="3">
+               <widget class="QLineEdit" name="leProveedorColdFoilMod_3"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="lblAnchoColdFoil_4">
+                <property name="text">
+                 <string>Ancho</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1" colspan="2">
+               <widget class="QDoubleSpinBox" name="dsbAnchoColdFoilMod_3">
+                <property name="decimals">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" rowspan="3" colspan="4">
+               <widget class="QTableView" name="viewColdFoil_3"/>
+              </item>
+              <item row="3" column="4">
+               <widget class="QPushButton" name="pbAniadirColdFoilMod_3">
+                <property name="text">
+                 <string>Añadir Cold Foil</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="4">
+               <widget class="QPushButton" name="pbEditarColdFoilMod_3">
+                <property name="text">
+                 <string>Editar Cold Foil</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="4">
+               <widget class="QPushButton" name="pbBorrarColdFoilMod_3">
+                <property name="text">
+                 <string>Borrar Cold Foil</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabTipoBarniz_4">
+          <attribute name="title">
+           <string>Tipo de Barniz</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_52">
+           <item row="0" column="0" colspan="2">
+            <widget class="QFrame" name="frame_7">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_53">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblTipoTBarniz_4">
+                <property name="text">
+                 <string>Tipo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leTipoTBarnizMod_3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblProveedorTBarniz_4">
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="leProveedorTBarnizMod_3"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="lblAniloxTBarniz_4">
+                <property name="text">
+                 <string>Anilox</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="leAniloxTBarnizMod_3"/>
+              </item>
+              <item row="5" column="3">
+               <widget class="QPushButton" name="pbEditarTBarnizMod_3">
+                <property name="text">
+                 <string>Editar Tipo de Barniz</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="3">
+               <widget class="QPushButton" name="pbBorrarTBarnizMod_3">
+                <property name="text">
+                 <string>Borrar Tipo de Barniz</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <widget class="QPushButton" name="pbAniadirTBarnizMod_3">
+                <property name="text">
+                 <string>Añadir Tipo de Barniz</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0" rowspan="3" colspan="2">
+               <widget class="QTableView" name="viewTipoBarniz_3"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabTroquel_4">
+          <attribute name="title">
+           <string>Troquel</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_54">
+           <item row="0" column="0" colspan="2">
+            <widget class="QFrame" name="frame_8">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <widget class="QLabel" name="lblProveedorTroquel_4">
+                <property name="text">
+                 <string>Proveedor</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="leProveedorTroquelMod_3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="lblObservaciones_3">
+                <property name="text">
+                 <string>Observaciones</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="leObservacionesTroquelMod_3"/>
+              </item>
+              <item row="2" column="0" rowspan="3" colspan="2">
+               <widget class="QTableView" name="viewTroquel_3"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pbAniadirTroquelMod_3">
+                <property name="text">
+                 <string>Añadir Troquel</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QPushButton" name="pbEditarTroquelMod_3">
+                <property name="text">
+                 <string>Editar Troquel</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pbBorrarTroquelMod_3">
+                <property name="text">
+                 <string>Borrar Troquel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="pbTerminarCaracteristicas">
+     <property name="text">
+      <string>Terminar Caracteristicas</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

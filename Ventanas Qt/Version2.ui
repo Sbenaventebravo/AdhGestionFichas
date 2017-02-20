@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>727</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabPrincipal">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabAdministrarFichas">
+      <attribute name="title">
+       <string>Administrar Fichas Tecnicas</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QTabWidget" name="tabOpFichas">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Crear Ficha</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Categoria</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="cmbCategoria"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="lblCliente">
+             <property name="text">
+              <string>Cliente</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="cmbCliente"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lblMaquina">
+             <property name="text">
+              <string>Maquina</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="cmbMaquina"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="lblPedido">
+             <property name="text">
+              <string>Pedido</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lePedido"/>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="lblEtiqueta">
+             <property name="text">
+              <string>Etiqueta</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="leEtiqueta"/>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="lblFecha">
+             <property name="text">
+              <string>Fecha</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QDateEdit" name="deFechaFicha">
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="lblVelocidad_2">
+             <property name="text">
+              <string> Velocidad de la Maquina(m/m )</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QDoubleSpinBox" name="dsbVelocidadFicha">
+             <property name="decimals">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="lblClisses">
+             <property name="text">
+              <string>Clisses</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QRadioButton" name="rbConvencionales">
+             <property name="text">
+              <string>Convencionales</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QRadioButton" name="rbDigitales">
+             <property name="text">
+              <string>Digitales</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0" colspan="2">
+            <widget class="QPushButton" name="pbGuardarFicha">
+             <property name="text">
+              <string>Guardar Ficha</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabConsultarFicha">
+          <attribute name="title">
+           <string>Consultar Ficha</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>659</width>
+                <height>459</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <item>
+                    <widget class="QGroupBox" name="groupBox">
+                     <property name="title">
+                      <string>Filtrar por</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_3">
+                      <item>
+                       <layout class="QVBoxLayout" name="verticalLayout_7">
+                        <item>
+                         <widget class="QRadioButton" name="rbCategoria">
+                          <property name="text">
+                           <string>Categoria</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="rbPedidos">
+                          <property name="text">
+                           <string>Pedidos</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="rbEtiqueta">
+                          <property name="text">
+                           <string>Etiqueta</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QRadioButton" name="rbCliente">
+                          <property name="text">
+                           <string>Cliente</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <item>
+                      <widget class="QComboBox" name="cmbBusqueda"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="twFichas"/>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QPushButton" name="pbModificarFicha">
+                   <property name="text">
+                    <string>Modificar Ficha</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pbMostrarFicha">
+                   <property name="text">
+                    <string>Consultar Ficha</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabAdministrarCategorias">
+      <attribute name="title">
+       <string>Administrar Categorias</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_14">
+       <item row="0" column="0" rowspan="2" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QPushButton" name="pbAniadirCategoria">
+             <property name="text">
+              <string>Añadir Categoria</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbEditarCategoria">
+             <property name="text">
+              <string>Editar Categoria</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="twCatergoria">
+           <column>
+            <property name="text">
+             <string>Nombre</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="0">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabAdministraClientes">
+      <attribute name="title">
+       <string>Administrar Clientes</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblRut">
+         <property name="text">
+          <string>Rut Cliente</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="leRutCliente"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblNombre">
+         <property name="text">
+          <string>Nombre Cliente</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="leNombreCliente"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pbAniadirCliente">
+         <property name="text">
+          <string>Añadir Cliente</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" rowspan="3">
+        <widget class="QTableWidget" name="twCliente">
+         <column>
+          <property name="text">
+           <string>Rut </string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Nombre</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pbEditarCliente">
+         <property name="text">
+          <string>Editar Cliente</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabAdministrarMaquinas">
+      <attribute name="title">
+       <string>Administrar Maquinas</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QPushButton" name="pbAniadirMaquina">
+             <property name="text">
+              <string>Añadir Maquina</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbEditarMaquina">
+             <property name="text">
+              <string>Editar Maquina</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="twMaquina">
+           <column>
+            <property name="text">
+             <string>Codigo</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabOpFichas</tabstop>
+  <tabstop>cmbCategoria</tabstop>
+  <tabstop>cmbCliente</tabstop>
+  <tabstop>cmbMaquina</tabstop>
+  <tabstop>lePedido</tabstop>
+  <tabstop>leEtiqueta</tabstop>
+  <tabstop>deFechaFicha</tabstop>
+  <tabstop>dsbVelocidadFicha</tabstop>
+  <tabstop>rbConvencionales</tabstop>
+  <tabstop>rbDigitales</tabstop>
+  <tabstop>pbGuardarFicha</tabstop>
+  <tabstop>tabPrincipal</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>rbCategoria</tabstop>
+  <tabstop>rbPedidos</tabstop>
+  <tabstop>rbEtiqueta</tabstop>
+  <tabstop>rbCliente</tabstop>
+  <tabstop>cmbBusqueda</tabstop>
+  <tabstop>twFichas</tabstop>
+  <tabstop>twCatergoria</tabstop>
+  <tabstop>pbAniadirCategoria</tabstop>
+  <tabstop>pbEditarCategoria</tabstop>
+  <tabstop>leRutCliente</tabstop>
+  <tabstop>leNombreCliente</tabstop>
+  <tabstop>twCliente</tabstop>
+  <tabstop>pbAniadirCliente</tabstop>
+  <tabstop>pbEditarCliente</tabstop>
+  <tabstop>twMaquina</tabstop>
+  <tabstop>pbAniadirMaquina</tabstop>
+  <tabstop>pbEditarMaquina</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
