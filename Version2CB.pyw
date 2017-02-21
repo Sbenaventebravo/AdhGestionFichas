@@ -1492,9 +1492,9 @@ class VgestionFichas(QtGui.QDialog):
                     if not daoMaquina.leerMaquina():
                         DAO.Maquina(nuevaMaquina).insertarMaquina()
                     else:
-                        raise Exception("El codigo de la maquina ya esta registrado, por favor intente con otro")
+                        raise Exception("El nombre de la maquina ya esta registrado, por favor intente con otro")
                 elif not newMaquina:
-                    raise Exception("El codigo de la maquina, no puede estar vacio")
+                    raise Exception("El nombre de la maquina, no puede estar vacio")
                 MostrarMensaje("Maquina agregada con exito")
         except Exception as e:
             MostrarError(str(e.message))
@@ -1526,9 +1526,9 @@ class VgestionFichas(QtGui.QDialog):
                         self.CargarTwMaquinas()
                         MostrarMensaje("Maquina Editada con exito")
                     else:
-                        raise Exception("El codigo de la maquina ya esta registrado, por favor intente con otro")
+                        raise Exception("El nombre de la maquina ya esta registrado, por favor intente con otro")
                 elif not newMaquina:
-                    raise Exception("El codigo de la maquina, no puede estar vacio")
+                    raise Exception("El nombre de la maquina, no puede estar vacio")
 
         except Exception as e:
             MostrarError(str(e.message))
