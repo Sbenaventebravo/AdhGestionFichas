@@ -654,7 +654,7 @@ class VgestionFichas(QtGui.QDialog):
         try:
             if self.modelMallas.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewMalla.selectedIndexes()) < 5:
+            if len(self.ui.viewMalla.selectedIndexes()) < 3:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modelMallas.columnCount()):
@@ -675,7 +675,7 @@ class VgestionFichas(QtGui.QDialog):
         try:
             if self.modelMallas.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewMalla.selectedIndexes()) < 5:
+            if len(self.ui.viewMalla.selectedIndexes()) < 3:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modelMallas.columnCount()):

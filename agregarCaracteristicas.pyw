@@ -452,7 +452,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelTinta.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewTintas.selectedIndexes()) < 5:
+            if len(self.ui.viewTintas.selectedIndexes()) < 6:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modelTinta.columnCount()):
@@ -472,7 +472,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelTinta.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewTintas.selectedIndexes()) < 5:
+            if len(self.ui.viewTintas.selectedIndexes()) < 6:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modelTinta.columnCount()):
@@ -554,7 +554,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             mal = DTO.Malla()
             mal.setTipo(self.ui.leTipoMallaMod.text())
-            if self.ui.rbInterno_2.isChecked():
+            if self.ui.rbInterno_4.isChecked():
 
                 mal.setInterno(True)
             else:
@@ -580,7 +580,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelMallas.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewMalla.selectedIndexes()) < 5:
+            if len(self.ui.viewMalla.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modelMallas.columnCount()):
@@ -601,7 +601,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelMallas.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewMalla.selectedIndexes()) < 5:
+            if len(self.ui.viewMalla.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modelMallas.columnCount()):
@@ -634,7 +634,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
                     self.cargarviewmallas()
     def limpiarFMalla(self):
         self.ui.leTipoMallaMod.setText("")
-        self.ui.rbInterno_2.setChecked(True)
+        self.ui.rbInterno_4.setChecked(True)
 
     "metodos para el crud de adhesivos de laminacion"
 
@@ -677,7 +677,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeladhlam.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewAdhLam.selectedIndexes()) < 5:
+            if len(self.ui.viewAdhLam.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modeladhlam.columnCount()):
@@ -697,7 +697,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeladhlam.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewAdhLam.selectedIndexes()) < 5:
+            if len(self.ui.viewAdhLam.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modeladhlam.columnCount()):
@@ -770,7 +770,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeladhcofo.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewAdhCofo.selectedIndexes()) < 5:
+            if len(self.ui.viewAdhCofo.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modeladhcofo.columnCount()):
@@ -788,10 +788,10 @@ class Vagregarcaracteristicas(QtGui.QDialog):
             self.modeladhcofo.submitAll()
     def updateRecordsdhcofo(self):
         try:
-            if self.modeladhlam.rowCount() == 0:
+            if self.modeladhcofo.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewAdhLam.selectedIndexes()) < 5:
-                raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
+            if len(self.ui.viewAdhCofo.selectedIndexes()) < 2:
+                raise Exception("Debe seleccionar el numero de la fila para poder modificar")
             fila = []
             for col in range(self.modeladhcofo.columnCount()):
                 index = self.modeladhcofo.index(self.ui.viewAdhCofo.currentIndex().row(), col)
@@ -863,7 +863,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelfilmi.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewFilmmi.selectedIndexes()) < 5:
+            if len(self.ui.viewFilmmi.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modelfilmi.columnCount()):
@@ -883,7 +883,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelfilmi.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewFilmmi.selectedIndexes()) < 5:
+            if len(self.ui.viewFilmmi.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modelfilmi.columnCount()):
@@ -968,7 +968,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelcoldfoil.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewColdFoil.selectedIndexes()) < 5:
+            if len(self.ui.viewColdFoil.selectedIndexes()) < 3:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modelcoldfoil.columnCount()):
@@ -988,7 +988,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modelcoldfoil.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewColdFoil.selectedIndexes()) < 5:
+            if len(self.ui.viewColdFoil.selectedIndexes()) < 3:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modelcoldfoil.columnCount()):
@@ -1079,7 +1079,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeltbarniz.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewTipoBarniz.selectedIndexes()) < 5:
+            if len(self.ui.viewTipoBarniz.selectedIndexes()) < 3:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modeltbarniz.columnCount()):
@@ -1099,7 +1099,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeltbarniz.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewTipoBarniz.selectedIndexes()) < 5:
+            if len(self.ui.viewTipoBarniz.selectedIndexes()) < 3:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modeltbarniz.columnCount()):
@@ -1176,7 +1176,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeltroquel.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewTroquel.selectedIndexes()) < 5:
+            if len(self.ui.viewTroquel.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
             fila = []
             for col in range(self.modeltroquel.columnCount()):
@@ -1196,7 +1196,7 @@ class Vagregarcaracteristicas(QtGui.QDialog):
         try:
             if self.modeltroquel.rowCount() == 0:
                 raise Exception("No existen registros a editar")
-            if len(self.ui.viewTroquel.selectedIndexes()) < 5:
+            if len(self.ui.viewTroquel.selectedIndexes()) < 2:
                 raise Exception("Debe seleccionar el numero de la fila para poder editar")
             fila = []
             for col in range(self.modeltroquel.columnCount()):

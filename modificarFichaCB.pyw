@@ -784,12 +784,13 @@ class Vmodificarficha(QtGui.QDialog):
         else:
             MostrarMensaje("Exito al eliminar Adhesivo cold foil")
             self.modeladhcofo.submitAll()
+
     def updateRecordsdhcofo(self):
         try:
-            if self.modeladhlam.rowCount() == 0:
+            if self.modeladhcofo.rowCount() == 0:
                 raise Exception("No existen registros a eliminar")
-            if len(self.ui.viewAdhLam.selectedIndexes()) < 2:
-                raise Exception("Debe seleccionar el numero de la fila para poder eliminar")
+            if len(self.ui.viewAdhCofo.selectedIndexes()) < 2:
+                raise Exception("Debe seleccionar el numero de la fila para poder modificar")
             fila = []
             for col in range(self.modeladhcofo.columnCount()):
                 index = self.modeladhcofo.index(self.ui.viewAdhCofo.currentIndex().row(), col)
